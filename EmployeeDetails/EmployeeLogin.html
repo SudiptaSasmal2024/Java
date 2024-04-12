@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name ="viewport" content="width=device-width, initial-scale =1.0">
+        <link rel="stylesheet" href="MyStyle.css">
+        <title><b> Employee Login App</b></title>
+        <script src="EmployeeView.js"></script>
+    </head>
+    <body>
+        <br>
+        <marquee behavior="scroll" direction="left" bgcolor="green" loop="20" width="1200" height="100" ><h1> Employee Management System </h1></marquee><br><br>
+        <button onclick="showAddUser()"> Add User</button>
+        <button onclick="showUpdateUser()"> Update User</button>
+        <button onclick="showDeleteUser()"> Delete User</button>
+        <button onclick="showViewById()"> Display By Id</button>
+        <button onclick="showAllUser()"> View All</button>
+
+        <fieldset id="addUser" style="display: none;">
+            <legend><h2> Add Personal Information</h2></legend>
+            User Id:
+            <input type="number" id="uid" placeholder="Enter User Id" /><br><br>
+            User Name:
+            <input type="text" id="uname" placeholder="Enter User Name" /><br><br>
+            City:
+            <input type="text" id="ucity" placeholder="Enter User's city" /><br><br>
+            <button type="submit" value="submit" onclick="saveUser()"> SAVE</button>
+        </fieldset>
+        <fieldset id="updateUser" style="display: none;">
+            <legend><h2> Update User Information</h2></legend>
+            User Id:
+            <input type="number" id="upid" placeholder="Enter user Id to be Updated:" /><br><br>
+            User Name:
+            <input type="text" id="upname" placeholder="Enter user Name to be Updated:" /><br><br>
+            User City:
+            <input type="text" id="upcity" placeholder="Enter user City to be Updated:" /><br><br>
+            <button type="submit" value="submit" onclick="updateUser()"> Update</button>
+        </fieldset>
+        <fieldset id="deleteUser" style="display: none;">
+            <legend><h2> Delete User Information</h2></legend>
+            User Id:
+            <input type="number" id="delid" placeholder="Enter user Id to be deleted:" /><br><br>
+            <button type="submit" value="submit" onclick="deleteUser()"> Delete</button>
+        </fieldset>
+        <fieldset id="viewUser" style="display: none;">
+            <legend> <h2>View User By Id</h2></legend>
+            User Id:
+            <input type="number" id="vid" placeholder="Enter user Id View Details:" /><br><br>
+            <button type="submit" value="submit" onclick="viewById()"> View</button>
+        </fieldset>
+
+        <table id="viewAll" style="display: none;">
+            <tr>
+                <th> User Id</th>
+                <th> Name</th>
+                <th> City</th>
+            </tr>
+        </table>
+    </body>
+</html>

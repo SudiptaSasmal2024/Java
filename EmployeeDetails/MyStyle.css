@@ -1,0 +1,23 @@
+fieldset{
+    border-color: blue;
+    background-color: aquamarine;
+}
+legend {
+    color: blueviolet;
+    
+}
+h2{
+    color: darkmagenta;
+    width: fit-content;
+
+}
+h1{
+    color: lavenderblush;
+}
+body{
+    background-color: gold;
+}
+table{
+    border-width: 0cm;
+    border-color: brown;
+}
